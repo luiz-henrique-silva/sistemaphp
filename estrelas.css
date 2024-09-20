@@ -1,0 +1,26 @@
+.estrelas {
+    display: flex;
+    direction: row-reverse;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.estrelas input {
+    display: none;
+}
+
+.estrelas label {
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.estrelas input:checked ~ label {
+    color: gold;
+}
+
+.estrelas label:hover,
+.estrelas label:hover ~ label {
+    color: gold;
+}
